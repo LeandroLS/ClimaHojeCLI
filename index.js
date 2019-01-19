@@ -20,10 +20,8 @@ function changeColor(temperatura){
 
 Promise.all([OpenWeatherMapResult, ApixuResult]).then((retorno) => {
     console.log(`
-    ========================================================================================================
     OpenWeatherMap ==> Cidade: ${retorno[0].city}, Temperatura: ${changeColor(retorno[0].temperature)} 
     Apixu ==> Cidade: ${retorno[1].city}, Temperatura: ${changeColor(retorno[1].temperature)}          
-    ========================================================================================================
     `);
 });
 
